@@ -27,7 +27,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         self.window = window
         
         // Fourth step for programmatically UI
-        let controller = UIViewController()
+        let controller = ViewController()
         window.rootViewController = controller
         
         // Fifth step for programmatically UI
