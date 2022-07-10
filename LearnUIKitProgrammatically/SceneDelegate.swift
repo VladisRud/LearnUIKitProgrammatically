@@ -27,12 +27,11 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         self.window = window
         
         // Fourth step for programmatically UI
-        let controller = ViewController()
+        let controller = GetImageController()
         window.rootViewController = controller
         
         // Fifth step for programmatically UI
         window.makeKeyAndVisible()
-        
         
         
     }

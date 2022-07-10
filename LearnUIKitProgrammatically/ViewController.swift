@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UINavigationController {
     
     let firstView: UIView = {
         let view = UIView()
