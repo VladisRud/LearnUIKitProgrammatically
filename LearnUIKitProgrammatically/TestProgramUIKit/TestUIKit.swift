@@ -1,13 +1,13 @@
 //
-//  ViewController.swift
+//  TestUIKit.swift
 //  LearnUIKitProgrammatically
 //
-//  Created by Влад Руденко on 08.07.2022.
+//  Created by Влад Руденко on 12.07.2022.
 //
 
 import UIKit
 
-class ViewController: UINavigationController {
+class TestUIKit: UINavigationController {
     
     let firstView: UIView = {
         let view = UIView()
@@ -76,4 +76,5 @@ class ViewController: UINavigationController {
     }
 
 }
+
 

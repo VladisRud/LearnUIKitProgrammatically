@@ -9,21 +9,31 @@
 /* Begin PBXBuildFile section */
 		58068388287886F60096ABBC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58068387287886F60096ABBC /* AppDelegate.swift */; };
 		5806838A287886F60096ABBC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58068389287886F60096ABBC /* SceneDelegate.swift */; };
-		5806838C287886F60096ABBC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5806838B287886F60096ABBC /* ViewController.swift */; };
 		58068391287886F70096ABBC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 58068390287886F70096ABBC /* Assets.xcassets */; };
 		58068394287886F70096ABBC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 58068392287886F70096ABBC /* LaunchScreen.storyboard */; };
 		5806839C287A05450096ABBC /* GetImageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5806839B287A05450096ABBC /* GetImageController.swift */; };
+		5806839F287D6AF10096ABBC /* TestUIKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5806839E287D6AF10096ABBC /* TestUIKit.swift */; };
+		580683A2287D6C850096ABBC /* UnplashPhotoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 580683A1287D6C850096ABBC /* UnplashPhotoModel.swift */; };
+		580683A4287D6DB60096ABBC /* CategoryImageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 580683A3287D6DB60096ABBC /* CategoryImageController.swift */; };
+		580683A6287F5A790096ABBC /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 580683A5287F5A790096ABBC /* MainViewController.swift */; };
+		E6A1D30DA1B16D25245F2BDD /* Pods_LearnUIKitProgrammatically.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D583E26FF4FECAB5D1E286C5 /* Pods_LearnUIKitProgrammatically.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0F3D215CA4F4730DF62245C4 /* Pods-LearnUIKitProgrammatically.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LearnUIKitProgrammatically.debug.xcconfig"; path = "Target Support Files/Pods-LearnUIKitProgrammatically/Pods-LearnUIKitProgrammatically.debug.xcconfig"; sourceTree = "<group>"; };
+		3D8E95DE4BD1318C1758EB6D /* Pods-LearnUIKitProgrammatically.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LearnUIKitProgrammatically.release.xcconfig"; path = "Target Support Files/Pods-LearnUIKitProgrammatically/Pods-LearnUIKitProgrammatically.release.xcconfig"; sourceTree = "<group>"; };
 		58068384287886F60096ABBC /* LearnUIKitProgrammatically.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LearnUIKitProgrammatically.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		58068387287886F60096ABBC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		58068389287886F60096ABBC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		5806838B287886F60096ABBC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		58068390287886F70096ABBC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		58068393287886F70096ABBC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		58068395287886F70096ABBC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5806839B287A05450096ABBC /* GetImageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetImageController.swift; sourceTree = "<group>"; };
+		5806839E287D6AF10096ABBC /* TestUIKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestUIKit.swift; sourceTree = "<group>"; };
+		580683A1287D6C850096ABBC /* UnplashPhotoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnplashPhotoModel.swift; sourceTree = "<group>"; };
+		580683A3287D6DB60096ABBC /* CategoryImageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryImageController.swift; sourceTree = "<group>"; };
+		580683A5287F5A790096ABBC /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		D583E26FF4FECAB5D1E286C5 /* Pods_LearnUIKitProgrammatically.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LearnUIKitProgrammatically.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +41,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E6A1D30DA1B16D25245F2BDD /* Pods_LearnUIKitProgrammatically.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		511653CF4B833EBE77F37294 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0F3D215CA4F4730DF62245C4 /* Pods-LearnUIKitProgrammatically.debug.xcconfig */,
+				3D8E95DE4BD1318C1758EB6D /* Pods-LearnUIKitProgrammatically.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		5806837B287886F60096ABBC = {
 			isa = PBXGroup;
 			children = (
 				58068386287886F60096ABBC /* LearnUIKitProgrammatically */,
 				58068385287886F60096ABBC /* Products */,
+				511653CF4B833EBE77F37294 /* Pods */,
+				F6298447C13E8D352FA5C7E5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +78,42 @@
 		58068386287886F60096ABBC /* LearnUIKitProgrammatically */ = {
 			isa = PBXGroup;
 			children = (
+				5806839D287D6AD90096ABBC /* TestProgramUIKit */,
+				580683A0287D6B390096ABBC /* GetImageAndSave */,
 				58068387287886F60096ABBC /* AppDelegate.swift */,
 				58068389287886F60096ABBC /* SceneDelegate.swift */,
-				5806838B287886F60096ABBC /* ViewController.swift */,
-				5806839B287A05450096ABBC /* GetImageController.swift */,
 				58068390287886F70096ABBC /* Assets.xcassets */,
 				58068392287886F70096ABBC /* LaunchScreen.storyboard */,
 				58068395287886F70096ABBC /* Info.plist */,
 			);
 			path = LearnUIKitProgrammatically;
+			sourceTree = "<group>";
+		};
+		5806839D287D6AD90096ABBC /* TestProgramUIKit */ = {
+			isa = PBXGroup;
+			children = (
+				5806839E287D6AF10096ABBC /* TestUIKit.swift */,
+			);
+			path = TestProgramUIKit;
+			sourceTree = "<group>";
+		};
+		580683A0287D6B390096ABBC /* GetImageAndSave */ = {
+			isa = PBXGroup;
+			children = (
+				5806839B287A05450096ABBC /* GetImageController.swift */,
+				580683A1287D6C850096ABBC /* UnplashPhotoModel.swift */,
+				580683A3287D6DB60096ABBC /* CategoryImageController.swift */,
+				580683A5287F5A790096ABBC /* MainViewController.swift */,
+			);
+			path = GetImageAndSave;
+			sourceTree = "<group>";
+		};
+		F6298447C13E8D352FA5C7E5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D583E26FF4FECAB5D1E286C5 /* Pods_LearnUIKitProgrammatically.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +123,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 58068398287886F70096ABBC /* Build configuration list for PBXNativeTarget "LearnUIKitProgrammatically" */;
 			buildPhases = (
+				2D7EEE8D2BCA3286E62073D0 /* [CP] Check Pods Manifest.lock */,
 				58068380287886F60096ABBC /* Sources */,
 				58068381287886F60096ABBC /* Frameworks */,
 				58068382287886F60096ABBC /* Resources */,
+				782093822879076987352CF1 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,14 +183,59 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2D7EEE8D2BCA3286E62073D0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LearnUIKitProgrammatically-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		782093822879076987352CF1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LearnUIKitProgrammatically/Pods-LearnUIKitProgrammatically-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LearnUIKitProgrammatically/Pods-LearnUIKitProgrammatically-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-LearnUIKitProgrammatically/Pods-LearnUIKitProgrammatically-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		58068380287886F60096ABBC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5806838C287886F60096ABBC /* ViewController.swift in Sources */,
+				580683A6287F5A790096ABBC /* MainViewController.swift in Sources */,
+				5806839F287D6AF10096ABBC /* TestUIKit.swift in Sources */,
 				58068388287886F60096ABBC /* AppDelegate.swift in Sources */,
 				5806839C287A05450096ABBC /* GetImageController.swift in Sources */,
+				580683A4287D6DB60096ABBC /* CategoryImageController.swift in Sources */,
+				580683A2287D6C850096ABBC /* UnplashPhotoModel.swift in Sources */,
 				5806838A287886F60096ABBC /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -274,6 +370,7 @@
 		};
 		58068399287886F70096ABBC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0F3D215CA4F4730DF62245C4 /* Pods-LearnUIKitProgrammatically.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -301,6 +398,7 @@
 		};
 		5806839A287886F70096ABBC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3D8E95DE4BD1318C1758EB6D /* Pods-LearnUIKitProgrammatically.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

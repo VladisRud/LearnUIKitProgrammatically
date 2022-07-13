@@ -75,6 +75,7 @@ class GetImageController: UIViewController {
         button.tintColor = .white
         button.layer.cornerRadius = 10
         button.titleLabel?.font = .systemFont(ofSize: 25)
+        button.addTarget(self, action: #selector(getImage), for: .touchUpInside)
         return button
     }()
     
@@ -122,4 +123,13 @@ class GetImageController: UIViewController {
     }
     
     
+    @objc func getImage() {
+        let systemImage = ["trash", "folder", "pencil.tip", "calendar"]
+        userImage.image = UIImage(systemName: systemImage[Int.random(in: 0...3)])
+    }
+    
+    
+    
 }
+
+
