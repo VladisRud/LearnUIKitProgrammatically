@@ -14,8 +14,7 @@
 		5806839C287A05450096ABBC /* GetImageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5806839B287A05450096ABBC /* GetImageController.swift */; };
 		5806839F287D6AF10096ABBC /* TestUIKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5806839E287D6AF10096ABBC /* TestUIKit.swift */; };
 		580683A2287D6C850096ABBC /* UnplashPhotoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 580683A1287D6C850096ABBC /* UnplashPhotoModel.swift */; };
-		580683A4287D6DB60096ABBC /* CategoryImageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 580683A3287D6DB60096ABBC /* CategoryImageController.swift */; };
-		580683A6287F5A790096ABBC /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 580683A5287F5A790096ABBC /* MainViewController.swift */; };
+		580683A82884761F0096ABBC /* CategoryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 580683A72884761F0096ABBC /* CategoryTableViewController.swift */; };
 		E6A1D30DA1B16D25245F2BDD /* Pods_LearnUIKitProgrammatically.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D583E26FF4FECAB5D1E286C5 /* Pods_LearnUIKitProgrammatically.framework */; };
 /* End PBXBuildFile section */
 
@@ -31,8 +30,7 @@
 		5806839B287A05450096ABBC /* GetImageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetImageController.swift; sourceTree = "<group>"; };
 		5806839E287D6AF10096ABBC /* TestUIKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestUIKit.swift; sourceTree = "<group>"; };
 		580683A1287D6C850096ABBC /* UnplashPhotoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnplashPhotoModel.swift; sourceTree = "<group>"; };
-		580683A3287D6DB60096ABBC /* CategoryImageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryImageController.swift; sourceTree = "<group>"; };
-		580683A5287F5A790096ABBC /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		580683A72884761F0096ABBC /* CategoryTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryTableViewController.swift; sourceTree = "<group>"; };
 		D583E26FF4FECAB5D1E286C5 /* Pods_LearnUIKitProgrammatically.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LearnUIKitProgrammatically.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -102,8 +100,7 @@
 			children = (
 				5806839B287A05450096ABBC /* GetImageController.swift */,
 				580683A1287D6C850096ABBC /* UnplashPhotoModel.swift */,
-				580683A3287D6DB60096ABBC /* CategoryImageController.swift */,
-				580683A5287F5A790096ABBC /* MainViewController.swift */,
+				580683A72884761F0096ABBC /* CategoryTableViewController.swift */,
 			);
 			path = GetImageAndSave;
 			sourceTree = "<group>";
@@ -230,11 +227,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				580683A6287F5A790096ABBC /* MainViewController.swift in Sources */,
+				580683A82884761F0096ABBC /* CategoryTableViewController.swift in Sources */,
 				5806839F287D6AF10096ABBC /* TestUIKit.swift in Sources */,
 				58068388287886F60096ABBC /* AppDelegate.swift in Sources */,
 				5806839C287A05450096ABBC /* GetImageController.swift in Sources */,
-				580683A4287D6DB60096ABBC /* CategoryImageController.swift in Sources */,
 				580683A2287D6C850096ABBC /* UnplashPhotoModel.swift in Sources */,
 				5806838A287886F60096ABBC /* SceneDelegate.swift in Sources */,
 			);
