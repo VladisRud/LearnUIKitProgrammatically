@@ -28,8 +28,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         
         // Fourth step for programmatically UI
 //        let controller = UINavigationController(rootViewController: TestUIKit())
-//        let controller = UINavigationController(rootViewController: CategoryTableViewController())
-        let controller = CategoryTableViewController()
+        let controller = UINavigationController(rootViewController: CategoryTableViewController())
+//        let controller = CategoryTableViewController()
         window.rootViewController = controller
         
         // Fifth step for programmatically UI
