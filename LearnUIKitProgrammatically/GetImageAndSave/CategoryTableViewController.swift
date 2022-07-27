@@ -12,6 +12,7 @@ class CategoryTableViewController: UIViewController {
     let categoriesInDict = UserImage()
     let categoriesOfImage = ["Space", "Animals", "Plant", "Yellow Thinking", "Home Decor and Design"]
     let iconOfImage = ["🌌", "🦫", "🪷", "💛", "🏠"]
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -36,15 +37,17 @@ class CategoryTableViewController: UIViewController {
         let table = UITableView()
         table.translatesAutoresizingMaskIntoConstraints = false
         table.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
+//        table.register(CategoryTableViewCell.self, forCellReuseIdentifier: "cell")
         return table
     }()
 
     func setUpConstrains() {
-
+        
         tableView.topAnchor.constraint(equalTo: view.topAnchor).isActive = true
         tableView.leftAnchor.constraint(equalTo: view.leftAnchor).isActive = true
         tableView.rightAnchor.constraint(equalTo: view.rightAnchor).isActive = true
         tableView.bottomAnchor.constraint(equalTo: view.bottomAnchor).isActive = true
+        
     }
 
 }
@@ -59,12 +62,26 @@ extension CategoryTableViewController: UITableViewDelegate, UITableViewDataSourc
 
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
+//        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
+        let cell2 = UITableViewCell(style: .value1, reuseIdentifier: "cell")
 
-        cell.textLabel?.text = categoriesOfImage[indexPath.row]
+        cell2.textLabel?.text = categoriesOfImage[indexPath.row]
+        cell2.detailTextLabel?.text = iconOfImage[indexPath.row]
 
-        return cell
+        return cell2
     }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        let image = GetImageController()
+        
+        image.categoryImage = categoriesOfImage[indexPath.row]
+        
+        navigationController?.pushViewController(image, animated: true)
+        
+    }
+    
+    
 }
 
 

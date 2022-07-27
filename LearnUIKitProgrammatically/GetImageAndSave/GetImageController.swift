@@ -9,7 +9,13 @@ import UIKit
 
 class GetImageController: UIViewController {
     
+    var categoryImage = ""
+    
+    var randomImage = UserImage()
+    
     override func viewDidLoad() {
+        randomImage.loadImage(category: categoryImage)
+        
         view.addSubview(labelView)
         labelView.addSubview(nameLable)
         
@@ -37,13 +43,6 @@ class GetImageController: UIViewController {
         label.textColor = .systemBlue
         label.font = .systemFont(ofSize: 25.0)
         return label
-    }()
-    
-    let imageView: UIView = {
-        let view = UIView()
-        view.translatesAutoresizingMaskIntoConstraints = false
-        
-        return view
     }()
     
     let userImage: UIImageView = {
@@ -124,8 +123,46 @@ class GetImageController: UIViewController {
     
     
     @objc func getImage() {
-        let systemImage = ["trash", "folder", "pencil.tip", "calendar"]
-        userImage.image = UIImage(systemName: systemImage[Int.random(in: 0...3)])
+//        let systemImage = ["trash", "folder", "pencil.tip", "calendar"]
+//        userImage.image = UIImage(systemName: systemImage[Int.random(in: 0...3)])
+        
+        randomImage.loadImage(category: categoryImage)
+        
+        //MARK: - Получение фотографии по ссылке
+
+//        let userPhoneDispaySizeHeight = Int(UIScreen.main.bounds.height)
+//
+//        let userPhoneDispaySizeWidth = Int(UIScreen.main.bounds.width)
+
+        // 1 - Получаем API
+        let API = "\(randomImage.urlPhoto)"
+        
+        // 2 - Создание URL
+        guard let apiURL = URL(string: API) else {
+            fatalError("WTFWTFWTFWTFWTFWTF")
+        }
+
+        // 3 - Инициализать сессию
+        let session = URLSession(configuration: .default)
+
+        // 4 - Создать запрос dataTask
+        let task = session.dataTask(with: apiURL) { data, response, error in
+            // 5 - Обработать полученные данные
+            guard let data = data, error == nil else {
+                return
+            }
+            DispatchQueue.main.async {
+                self.userImage.image = UIImage(data: data)
+            }
+        }
+
+        // 6 - Запустить запрос
+        task.resume()
+        
+    }
+    
+    @objc func saveImage() {
+        
     }
     
     
