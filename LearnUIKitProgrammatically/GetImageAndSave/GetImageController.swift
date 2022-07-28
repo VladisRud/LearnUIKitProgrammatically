@@ -86,6 +86,7 @@ class GetImageController: UIViewController {
         button.tintColor = .white
         button.layer.cornerRadius = 10
         button.titleLabel?.font = .systemFont(ofSize: 25)
+        button.addTarget(self, action: #selector(saveImage), for: .touchUpInside)
         return button
     }()
     
@@ -162,6 +163,21 @@ class GetImageController: UIViewController {
     }
     
     @objc func saveImage() {
+        guard let savedImage = userImage.image else {
+            return
+        }
+        
+        UIImageWriteToSavedPhotosAlbum(savedImage, self, #selector(image(_:didFinishSavingWithError:contextInfo:)), nil)
+        
+    }
+    
+    @objc func image(_ image: UIImage, didFinishSavingWithError error: Error?, contextInfo: UnsafeRawPointer) {
+
+        if let error = error {
+            print(error.localizedDescription)
+        } else {
+            print("Success")
+        }
         
     }
     
